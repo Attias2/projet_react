@@ -75,7 +75,11 @@ function Character() {
       <h2>Saisons & Épisodes</h2>
       {seasons.map(season => (
         <div key={season.id}>
-          <h3>Saison {season.number}</h3>
+          <h3>
+            <Link to={`/season/${season.id}`}>
+              Saison {season.number}
+            </Link>
+          </h3>
           <ul>
             {episodesBySeason[season.id]?.map(episode => (
               <li key={episode.id}>

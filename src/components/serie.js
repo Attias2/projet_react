@@ -51,7 +51,10 @@ function Serie() {
       <ul>
         {seasons.map(season => (
           <li key={season.id}>
-            Saison {season.number} ({season.episodeOrder || "?"} épisodes) – {season.premiereDate} à {season.endDate}
+            <Link to={`/season/${season.id}`}>
+              Saison {season.number} 
+            </Link>
+            ({season.episodeOrder || "?"} épisodes) – {season.premiereDate} à {season.endDate}
           </li>
         ))}
       </ul>

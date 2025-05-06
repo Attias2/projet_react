@@ -8,6 +8,7 @@ import Episode from './episode.js';
 import Person from './person.js';
 import Character from './character.js';
 import LstPerson from './lstPerson.js';
+import Season from './season.js';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/person/:id" element={<Person />} />
           <Route path="/character/:showId/:characterId" element={<Character />} />
           <Route path="/lstPerson" element={<LstPerson />} />
+          <Route path="/season/:id" element={<Season />} />
 
         </Routes>
       </Router>
