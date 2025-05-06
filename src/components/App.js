@@ -7,6 +7,8 @@ import Serie from './serie.js';
 import Episode from './episode.js';
 import Person from './person.js';
 import Character from './character.js';
+import LstPerson from './lstPerson.js';
+
 
 function App() {
   return (
@@ -17,12 +19,12 @@ function App() {
           <div className="container">
             <nav className="nav">
               <ul className="nav-links">
-                        <li>
-                          <Link to="/showList">Sérié</Link>
-                        </li>
-                        <li>
-                            <a href="">Acteur</a>
-                        </li>
+                <li>
+                  <Link to="/showList">Sérié</Link>
+                </li>
+                <li>
+                  <Link to="/lstPerson">Acteur</Link>
+                </li>
               </ul>
             </nav>
             <button className="menu-toggle" id="menu-toggle">☰</button>
@@ -36,6 +38,7 @@ function App() {
           <Route path="/episode/:id" element={<Episode />} />
           <Route path="/person/:id" element={<Person />} />
           <Route path="/character/:showId/:characterId" element={<Character />} />
+          <Route path="/lstPerson" element={<LstPerson />} />
 
         </Routes>
       </Router>

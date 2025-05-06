@@ -49,7 +49,7 @@ function Character() {
 
   return (
     <div className="character-details" style={{ padding: '20px' }}>
-      <Link to={`/serie/${showId}`}>← Retour à la série</Link>
+      
 
       <h1>{character.name}</h1>
 

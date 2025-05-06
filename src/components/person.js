@@ -24,7 +24,7 @@ function Person() {
 
   return (
     <div className="person-details">
-      <Link to="/">← Retour</Link>
+      
       <h1>{person.name}</h1>
       <img
         src={person.image?.medium || 'https://via.placeholder.com/210x295'}
